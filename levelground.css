@@ -1,0 +1,670 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 10px;
+     line-height: 1.4;
+     font-family: 'Roboto', sans-serif
+
+}
+
+
+/******************************************
+/* LAYOUT!!!!!
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+  height: 625px;
+  background-color: #778899;
+}
+
+header + section {
+  height: 425px;
+}
+
+header + section + section {
+  height: 700px;
+  background-color: lightgrey;
+}
+
+header + section + section + section {
+  height: 650px;
+}
+
+footer {
+  height: 275px;
+  background-color: #000d1a;
+
+}
+
+
+/******************************************
+/* header styles!!!!!
+/*******************************************/
+
+header > nav > ul {
+  width: 30%;
+}
+
+header > nav > ul > li {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+header > nav > ul > li a{
+  color: white;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 10px;
+  font-weight: bold;
+}
+
+header > nav > ul > li a:hover{
+  opacity: .5;
+}
+
+header img {
+  height: 41px;
+  width: 3%;
+  margin: -3% 1% 1% 47%;
+}
+
+header div {
+  height: 30px;
+  width: 5%;
+  border: 1px solid white;
+  background-color: white;
+  padding-top: 4px;
+  border-radius: 2px;
+  padding-left: 2px;
+  margin: -3.5% 1% 1% 90%
+}
+
+header div span a {
+  text-decoration: none;
+  color: #778899;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header div:hover {
+  opacity: .7;
+}
+
+.oppurtunity {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 6.5em;
+  margin: 9% 1% 2% 10%;
+}
+
+.lorem {
+    font-size: 2.4em;
+    color: #f2f2f2;
+    width: 83%;
+    margin: 0% 0% 2% 7%;
+    padding: 0% 0% 0% 2%;
+    text-align: center;
+}
+
+.watch {
+    font-size: 2em;
+    color: #f2f2f2;
+    display: block;
+    margin: -2.7% 1% 1% 45%;
+    opacity: .7;
+}
+
+.fa-play-circle-o {
+  margin: 0% 1% 0% 42%;
+  color: #f2f2f2;
+  font-weight: lighter;
+}
+
+.big {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 6% 1% 1% 45%;
+  display: block;
+  opacity: .5;
+}
+
+/********************
+small section under the header
+*********************/
+
+header + section > h2 {
+  font-size: 5em;
+  color: #000d1a;
+  text-transform: uppercase;
+  margin: 5% 1% 2% 45%;
+}
+
+header + section > p {
+  font-size: 2.4em;
+  color: #000d1a;
+  text-align: center;
+  width: 55%;
+  margin: 1% 1% 1% 22%
+}
+
+/********************
+section containing 2 sections
+*********************/
+
+header + section + section > section {
+  float: left;
+  height: 400px;
+  width: 30%;
+  margin: 6% -2% 0% 13%;
+}
+
+header + section + section > section > div {
+  height: 200px;
+  width: 100%;
+  background-color: #778899;
+}
+
+.buttons{
+  height: 58px;
+  width: 42%;
+  border: thin solid black;
+  margin: 16% 1% 1% 27%;
+  background-color: transparent;
+}
+
+.textButtons{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000d1a;
+    margin: 0% 0% 0% 0%;
+    height: inherit;
+    display: block;
+    padding: 10% 1% 1% 19%;
+}
+
+.textButtons2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000d1a;
+  margin: 0% 0% 0% 0%;
+  display: block;
+  padding: 11% 2% 10.5% 32%;
+}
+
+.textButtons:hover{
+  background-color: #778899;
+  color: white;
+  transition: .7s ease;
+}
+
+.textButtons2:hover{
+  background-color: #778899;
+  color: white;
+  transition: .7s ease;
+}
+
+.visit{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 6% 1% 2% 25%;
+}
+
+.ipsum{
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: -8%;
+}
+/***********************
+styles before foooter**/
+.volunteer{
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 13% 0% 1% 19%;
+  color: #000d1a;
+}
+
+.underVolunteer{
+  font-size: 2.4em;
+  text-align: center;
+  margin: 3% 17% 0% 13%;
+}
+
+.volunteerButton{
+  height: 58px;
+  width: 17%;
+  border: thin solid black;
+  margin: 7% 1% 2% 42%;
+  background-color: transparent;
+}
+
+.volunteerButton2{
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000d1a;
+    margin: -2% 0% 0% 6%;
+    height: inherit;
+    display: block;
+    padding: 10% 1% 1% 19%
+}
+
+.volunteerButton:hover{
+  background-color: #778899;
+  transition: .2s ease;
+}
+
+/**************************
+footer*********************/
+
+footer > section h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 4% 1% 6% 7%;
+  opacity: .7;
+}
+
+footer > section span{
+  font-size: 1.4em;
+  margin-right: -2%;
+  margin-left: 6%
+}
+
+.sectionUnderFooter{
+  height: 200px;
+  width: 20%;
+  color: white;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.fa-facebook-official {
+  margin: 20px;
+}
+
+.fa-twitter{
+  margin: 20px;
+}
+
+.fa-envelope{
+  margin: 20px;
+}
+
+.info{
+  float: right;
+  height: 200px;
+  width: 20%;
+  color: white;
+  margin-left: 3%;
+  margin-top: -14%;
+}
+
+.level{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 4% 11% 7% 6%;
+  color: white;
+  text-align: left;
+}
+
+.infoP{
+  font-size: 1.5em;
+  margin: 0% 20% 5% 6%;
+  opacity: .7;
+}
+/*******************************
+media queries******************/
+
+@media (min-width : 320px) and (max-width : 768px){
+
+  header {
+    height: 925px;
+    background-color: #778899;
+  }
+
+  header + section {
+    height: 525px;
+  }
+
+  header + section + section {
+    height: 1300px;
+    background-color: lightgrey;
+  }
+
+  header + section + section + section {
+    height: 650px;
+  }
+
+  footer {
+    height: 275px;
+    background-color: #000d1a;
+
+  }
+  /***************************************************************
+  ******************header query style***************************/
+
+  header > nav > ul {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  header > nav > ul > li {
+    display: block;
+    text-align: center;
+  }
+
+  header > nav > ul > li a{
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  header > nav > ul > li a:hover{
+    opacity: .5;
+  }
+
+  header img {
+    display: none;
+    height: 41px;
+    width: 3%;
+    margin: -3% 1% 1% 47%;
+  }
+
+  header div {
+    height: 46px;
+    width: 25%;
+    border: 1px solid white;
+    background-color: white;
+    padding-top: 4px;
+    border-radius: 2px;
+    padding-left: 26px;
+    margin: 3.5% 3% 1% 41%;
+  }
+
+  header div span a {
+    text-decoration: none;
+    color: #778899;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  header div:hover {
+    opacity: .7;
+  }
+
+  .oppurtunity {
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 5.5em;
+    margin: 9% -1% 2% 5%;
+    text-align: center;
+  }
+
+  .lorem {
+      font-size: 2.4em;
+      color: #f2f2f2;
+      width: 83%;
+      margin: 0% 0% 2% 7%;
+      padding: 0% 0% 0% 2%;
+      text-align: center;
+  }
+
+  .watch {
+      font-size: 2em;
+      color: #f2f2f2;
+      display: block;
+      margin: -4.7% 1% 1% 45%;
+      opacity: .7;
+  }
+
+  .fa-play-circle-o {
+    margin: 3% 1% 0% 37%;
+    color: #f2f2f2;
+    font-weight: lighter;
+  }
+
+  .big {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 6% 1% 1% 45%;
+    display: block;
+    opacity: .5;
+  }
+
+  /********************
+  small section under the header
+  *********************/
+
+  header + section > h2 {
+    font-size: 5em;
+    color: #000d1a;
+    text-transform: uppercase;
+    margin: 5% 1% 2% 45%;
+  }
+
+  header + section > p {
+    font-size: 2.4em;
+    color: #000d1a;
+    text-align: center;
+    width: 55%;
+    margin: 1% 1% 1% 25%
+  }
+/*************************
+***********third section with2*/
+header + section + section > section {
+    float: none;
+    height: 400px;
+    width: 66%;
+    margin: 24% 0% 0% 17%
+}
+
+header + section + section > section > div {
+  height: 200px;
+  width: 100%;
+  background-color: #778899;
+}
+
+.buttons{
+  height: 58px;
+  width: 42%;
+  border: thin solid black;
+  margin: 16% 1% 1% 27%;
+  background-color: transparent;
+}
+
+.textButtons{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000d1a;
+    margin: 0% 0% 0% 0%;
+    height: inherit;
+    display: block;
+    padding: 10% 1% 1% 19%;
+}
+
+.textButtons2{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000d1a;
+  margin: 0% 0% 0% 0%;
+  display: block;
+  padding: 11% 2% 10.5% 32%;
+}
+
+.textButtons:hover{
+  background-color: #778899;
+  color: white;
+  transition: .7s ease;
+}
+
+.textButtons2:hover{
+  background-color: #778899;
+  color: white;
+  transition: .7s ease;
+}
+
+.visit{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 6% 1% 2% 25%;
+}
+
+.ipsum{
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: -8%;
+}
+/***********************
+styles before foooter**/
+.volunteer{
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 13% 0% 1% 15%;
+  color: #000d1a;
+  width: 80%;
+}
+
+.underVolunteer{
+  font-size: 2.4em;
+  text-align: center;
+  margin: 3% 17% 0% 13%;
+}
+
+.volunteerButton{
+  height: 58px;
+  width: 34%;
+  border: thin solid black;
+  margin: 7% 1% 2% 29%;
+  background-color: transparent;
+}
+
+.volunteerButton2{
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000d1a;
+    margin: -2% 0% 0% 6%;
+    height: inherit;
+    display: block;
+    padding: 10% 1% 1% 19%
+}
+
+.volunteerButton:hover{
+  background-color: #778899;
+  transition: .2s ease;
+}
+
+/**************************
+footer*********************/
+
+footer > section h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 4% 1% 6% 7%;
+  opacity: .7;
+}
+
+footer > section span{
+  font-size: 1.4em;
+  margin-right: -2%;
+  margin-left: 6%
+}
+
+.sectionUnderFooter{
+  height: 200px;
+  width: 50%;
+  color: white;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.fa-facebook-official {
+  margin: 20px;
+}
+
+.fa-twitter{
+  margin: 20px;
+}
+
+.fa-envelope{
+  margin: 20px;
+}
+
+.info{
+  float: right;
+  height: 200px;
+  width: 20%;
+  color: white;
+  margin-left: 3%;
+  margin-top: -14%;
+}
+
+.level{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: -61% 11% 7% -65%;
+  color: white;
+  text-align: left;
+}
+
+.infoP{
+  font-size: 1.5em;
+  margin: 0% 20% 5% -66%;
+  opacity: .7;
+}
+
+}
